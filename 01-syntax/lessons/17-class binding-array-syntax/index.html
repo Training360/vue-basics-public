@@ -15,8 +15,7 @@
         <div v-for="guitar in guitars" :key="guitar.id">
           <h2>{{ guitar.name }}</h2>
           <span
-            :class="['stock', guitar.stock === 0 ? 'out-of-stock' : 'in-stock']"
-          >
+            :class="['stock', guitar.stock === 0 ? 'out-of-stock' : 'in-stock']">
             {{ guitar.stock }} in stock
           </span>
         </div>

@@ -23,7 +23,7 @@ watch(searchTerm, (value) => {
 
 <template>
   <div>
-    <input v-model="searchTerm" @input="filterData" />
+    <input v-model="searchTerm" />
     <ul>
       <li v-for="item in filteredData" :key="item.id">{{ item.name }}</li>
     </ul>
